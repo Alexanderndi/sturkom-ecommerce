@@ -18,7 +18,7 @@
                             <strong text->Success | {{Session::get('success_message') }}</strong>
                         </div>
                         @endif
-                        @if (Cart::count() > 0)
+                        @if (Cart::instance('cart')->count() > 0)
                         <table class="table shopping-summery text-center clean">
                             <thead>
                                 <tr class="main-heading">
@@ -31,7 +31,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (Cart::content() as $item)
+                                @foreach (Cart::instance('cart')->content() as $item)
                                 <tr>
                                     <td class="image product-thumbnail"><img src="{{ asset('assets/imgs/shop/product-') }}{{$item->model->id}}-1.jpg" alt="{{$item->model->name}}"></td>
                                     <td class="product-des product-name">
@@ -375,11 +375,11 @@
                                         <tbody>
                                             <tr>
                                                 <td class="cart_total_label">Cart Subtotal</td>
-                                                <td class="cart_total_amount"><span class="font-lg fw-900 text-brand">${{ Cart::subtotal() }}</span></td>
+                                                <td class="cart_total_amount"><span class="font-lg fw-900 text-brand">${{ Cart::instance('cart')->subtotal() }}</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="cart_total_label">Tax</td>
-                                                <td class="cart_total_amount"><span class="font-lg fw-900 text-brand">${{ Cart::tax() }}</span></td>
+                                                <td class="cart_total_amount"><span class="font-lg fw-900 text-brand">${{ Cart::instance('cart')->tax() }}</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="cart_total_label">Shipping</td>
@@ -387,7 +387,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="cart_total_label">Total</td>
-                                                <td class="cart_total_amount"><strong><span class="font-xl fw-900 text-brand">${{ Cart::total()}}</span></strong></td>
+                                                <td class="cart_total_amount"><strong><span class="font-xl fw-900 text-brand">${{ Cart::instance('cart')->total()}}</span></strong></td>
                                             </tr>
                                         </tbody>
                                     </table>
