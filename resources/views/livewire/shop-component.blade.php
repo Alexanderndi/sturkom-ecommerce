@@ -1,5 +1,4 @@
 <div>
-    <main class="main">
     <style>
         nav svg{
             height: 20px;
@@ -15,6 +14,7 @@
             color: white !important;
         }
     </style>
+    <main class="main">
     <div class="page-header breadcrumb-wrap">
         <div class="container">
             <div class="breadcrumb">
