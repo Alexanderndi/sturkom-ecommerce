@@ -7,6 +7,7 @@ use App\Http\Livewire\ShopComponent;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Admin\AdminAddCategoryComponent;
+use App\Http\Livewire\Admin\AdminAddProductComponent;
 use App\Http\Livewire\Admin\AdminCategoriesComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminProductComponent;
@@ -61,6 +62,7 @@ Route::middleware(['auth', 'authadmin'])->group(function () {
     Route::get('/admin/categories/add', AdminAddCategoryComponent::class)->name('admin.category.add');
     Route::get('/admin/category/edit/{category_id}', AdminAddCategoryComponent::class)->name('admin.category.edit');
     Route::get('/admin/products/', AdminProductComponent::class)->name('admin.products');
+    Route::get('admin/product/add/', AdminAddProductComponent::class)->name('admin.product.add');
 });
 
 Route::middleware('auth')->group(function () {
