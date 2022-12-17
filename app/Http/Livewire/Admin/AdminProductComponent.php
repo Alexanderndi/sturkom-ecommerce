@@ -16,7 +16,7 @@ class AdminProductComponent extends Component
         $product = Product::find($this->product_id);
         unlink('assets/imgs/products/' . $product->image);
         $product->delete();
-        session('message', 'Product has been deleted Successfully!');
+        session()->flash('message', 'Product has been deleted Successfully!');
     }
     public function render()
     {

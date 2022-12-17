@@ -17,7 +17,10 @@ use App\Http\Livewire\Admin\AdminAddProductComponent;
 use App\Http\Livewire\Admin\AdminCategoriesComponent;
 use App\Http\Livewire\Admin\AdminAddCategoryComponent;
 use App\Http\Livewire\Admin\AdminEditProductComponent;
+use App\Http\Livewire\Admin\AdminHomeSlidderComponent;
 use App\Http\Livewire\Admin\AdminEditCategoryComponent;
+use App\Http\Livewire\Admin\AdminAddHomeSlidderComponent;
+use App\Http\Livewire\Admin\AdminEditHomeSlidderComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,6 +69,9 @@ Route::middleware(['auth', 'authadmin'])->group(function () {
     Route::get('/admin/products/', AdminProductComponent::class)->name('admin.products');
     Route::get('/admin/product/add/', AdminAddProductComponent::class)->name('admin.product.add');
     Route::get('/admin/product/edit/{product_id}', AdminEditProductComponent::class)->name('admin.product.edit');
+    Route::get('/admin/slidder', AdminHomeSlidderComponent::class)->name('admin.home.slidder');
+    Route::get('/admin/slidder/add', AdminAddHomeSlidderComponent::class)->name('admin.home.slidder.add');
+    Route::get('/admin/slidder/edit/{slidder_id}', AdminEditHomeSlidderComponent::class)->name('admin.home.slidder.edit');
 });
 
 // Route::middleware('auth')->group(function () {
