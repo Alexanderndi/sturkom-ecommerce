@@ -65,7 +65,8 @@
                                             <td>{{ $product->category->name}}</td>
                                             <td>{{ $product->created_at}}</td>
                                             <td>
-
+                                                <a href="{{ route('admin.product.edit', ['product_id'=>$product->id ])}}" class="text-info">Edit</a>
+                                                <a href="#" onclick="deleteConfirmation({{$product->id}})" class="text-danger">Delete</a>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -89,7 +90,7 @@
                     <div class="col-md-12 text-center">
                         <h4 class="pb-3">Do you want to DELETE this record?</h4>
                         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteConfirmation">Cancel</button>
-                        <button type="button" class="btn btn-danger" onclick="deleteCategory()">Delete</button>
+                        <button type="button" class="btn btn-danger" onclick="deleteProduct()">Delete</button>
                     </div>
                 </div>
             </div>
@@ -100,13 +101,13 @@
     <script>
         function deleteConfirmation(id)
         {
-            @this.set('category_id',id);
+            @this.set('product_id',id);
             $('#deleteConfirmation').modal('show');
         }
 
-        function deleteCategory()
+        function deleteProduct()
         {
-            @this.call('deleteCategory');
+            @this.call('deleteProduct');
             $('#deleteConfirmation').modal('hide');
         }
     </script>
