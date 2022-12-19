@@ -69,8 +69,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="{{ route('product.details',['slug'=>$product->slug]) }}">
-                                            <img class="default-img" src="{{ asset('assets/imgs/shop/product-') }}{{$product->id}}-1.jpg" alt="{{$product->name}}">
-                                            <img class="hover-img" src="{{ asset('assets/imgs/shop/product-') }}{{$product->id}}-1.jpg" alt="{{$product->name}}">
+                                            <img class="default-img" src="{{ asset('assets/imgs/products') }}/{{$product->image}}" alt="{{$product->name}}">
+                                            <img class="hover-img" src="{{ asset('assets/imgs/products') }}/{{$product->image}}" alt="{{$product->name}}">
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop.html">Music</a>
+                                        <a href="{{ route('product.category',['slug'=>$product->category->slug])}}">{{$product->category->name}}</a>
                                     </div>
                                     <h2><a href="{{ route('product.details',['slug'=>$product->slug])}}">{{ $product->name }}</a></h2>
                                     <div class="rating-result" title="90%">

@@ -52,7 +52,7 @@ class AdminEditCategoryComponent extends Component
         $category->slug = $this->slug;
         if($this->newimage)
         {
-            //unlink('assets/imgs/categories/' . $image);
+            unlink('assets/imgs/categories/'.$category->image);
             $imageName = Carbon::now()->timestamp.'.'.$this->newimage->extension();
             $this->newimage->storeAs('categories', $imageName);
             $category->image = $imageName;
