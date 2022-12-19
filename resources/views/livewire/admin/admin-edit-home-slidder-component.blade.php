@@ -85,9 +85,9 @@
                                     <label for="newimage" class="form-label">Image</label>
                                     <input type="file" class="form-control" wire:model="newimage"/>
                                     @if ($newimage)
-                                        <img src="{{$image->temporaryUrl()}}" width="100" />
+                                        <img src="{{$newimage->temporaryUrl()}}" width="100" />
                                     @else
-                                        <img src="{{asset('assets/imgs/slidders')}}/{{$image}}" width="100">
+                                        <img src="{{asset('assets/imgs/sliders')}}/{{$image}}" width="120">
                                     @endif
                                     @error('image')
                                         <p class="text-danger">{{$message}}</p>

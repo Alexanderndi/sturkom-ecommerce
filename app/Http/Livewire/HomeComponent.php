@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Category;
 use App\Models\HomeSlidder;
 use App\Models\Product;
 use Livewire\Component;
@@ -21,6 +22,7 @@ class HomeComponent extends Component
         $slidders = HomeSlidder::where('status',1)->get();
         $latest_products = Product::orderBy('created_at', 'DESC')->get()->take(10);
         $featured_products = Product::where('featured', 1)->inRandomOrder()->get()->take(8);
-        return view('livewire.home-component', ['slidders'=>$slidders, 'latest_products'=>$latest_products, 'featured_products'=>$featured_products]);
+        $product_categories = Category::where('is_popular', 1)->inRandomOrder()->get()->take(8);
+        return view('livewire.home-component', ['slidders'=>$slidders, 'latest_products'=>$latest_products, 'featured_products'=>$featured_products, 'product_categories'=>$product_categories]);
     }
 }

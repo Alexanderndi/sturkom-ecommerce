@@ -54,8 +54,8 @@ class AdminEditHomeSlidderComponent extends Component
         if($this->newimage)
         {
             unlink('assets/imgs/slidders/' . $slidder->image);
-            $imageName = Carbon::now()->timestamp .'.'.$this->newimage->extension();
-            $this->newimage->storeAs('slidders', $imageName);
+            $imageName = Carbon::now()->timestamp.'.'.$this->newimage->extension();
+            $this->newimage->storeAs('sliders', $imageName);
             $slidder->newimage = $imageName;
         }
         $slidder->save();
