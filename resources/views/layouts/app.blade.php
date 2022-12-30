@@ -40,9 +40,9 @@
                         <div class="text-center">
                             <div id="news-flash" class="d-inline-block">
                                 <ul>
-                                    <li>Get great devices up to 50% off <a href="shop.html">View details</a></li>
+                                    <li>Get great devices up to 50% off <a href="{{ route('shop')}}">View details</a></li>
                                     <li>Supper Value Deals - Save more with coupons</li>
-                                    <li>Trendy 25silver jewelry, save up 35% off today <a href="shop.html">Shop now</a></li>
+                                    <li>Trendy 25silver jewelry, save up 35% off today <a href="{{ route('shop')}}">Shop now</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                             <div class="categori-dropdown-wrap categori-dropdown-active-large">
                                 <ul>
                                     <li class="has-children">
-                                        <a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a>
+                                        <a href="{{ route('shop')}}"><i class="Sturkom-font-dress"></i>Women's Clothing</a>
                                         <div class="dropdown-menu">
                                             <ul class="mega-menu d-lg-flex">
                                                 <li class="mega-menu-col col-lg-7">
@@ -155,7 +155,7 @@
                                         </div>
                                     </li>
                                     <li class="has-children">
-                                        <a href="shop.html"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a>
+                                        <a href="{{ route('shop')}}"><i class="Sturkom-font-tshirt"></i>Men's Clothing</a>
                                         <div class="dropdown-menu">
                                             <ul class="mega-menu d-lg-flex">
                                                 <li class="mega-menu-col col-lg-7">
@@ -201,7 +201,7 @@
                                         </div>
                                     </li>
                                     <li class="has-children">
-                                        <a href="shop.html"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a>
+                                        <a href="{{ route('shop')}}"><i class="Sturkom-font-smartphone"></i> Cellphones</a>
                                         <div class="dropdown-menu">
                                             <ul class="mega-menu d-lg-flex">
                                                 <li class="mega-menu-col col-lg-7">
@@ -255,19 +255,19 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-diamond"></i>Jewelry & Accessories</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a></li>
-                                    <li><a href="shop.html"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
+                                    <li><a href="{{ route('shop')}}"><i class="Sturkom-font-desktop"></i>Computer & Office</a></li>
+                                    <li><a href="{{ route('shop')}}"><i class="Sturkom-font-cpu"></i>Consumer Electronics</a></li>
+                                    <li><a href="{{ route('shop')}}"><i class="Sturkom-font-diamond"></i>Jewelry & Accessories</a></li>
+                                    <li><a href="{{ route('shop')}}"><i class="Sturkom-font-home"></i>Home & Garden</a></li>
+                                    <li><a href="{{ route('shop')}}"><i class="Sturkom-font-high-heels"></i>Shoes</a></li>
+                                    <li><a href="{{ route('shop')}}"><i class="Sturkom-font-teddy-bear"></i>Mother & Kids</a></li>
+                                    <li><a href="{{ route('shop')}}"><i class="Sturkom-font-kite"></i>Outdoor fun</a></li>
                                     <li>
                                         <ul class="more_slide_open" style="display: none;">
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Beauty, Health</a></li>
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Bags and Shoes</a></li>
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-diamond"></i>Consumer Electronics</a></li>
-                                            <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Automobiles & Motorcycles</a></li>
+                                            <li><a href="{{ route('shop')}}"><i class="Sturkom-font-desktop"></i>Beauty, Health</a></li>
+                                            <li><a href="{{ route('shop')}}"><i class="Sturkom-font-cpu"></i>Bags and Shoes</a></li>
+                                            <li><a href="{{ route('shop')}}"><i class="Sturkom-font-diamond"></i>Consumer Electronics</a></li>
+                                            <li><a href="{{ route('shop')}}"><i class="Sturkom-font-home"></i>Automobiles & Motorcycles</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -457,15 +457,15 @@
                         </a>
                         <div class="categori-dropdown-wrap categori-dropdown-active-small">
                             <ul>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a></li>
-                                <li> <a href="shop.html"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-dress"></i>Women's Clothing</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-tshirt"></i>Men's Clothing</a></li>
+                                <li> <a href="{{ route('shop')}}"><i class="Sturkom-font-smartphone"></i> Cellphones</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-desktop"></i>Computer & Office</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-cpu"></i>Consumer Electronics</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-home"></i>Home & Garden</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-high-heels"></i>Shoes</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-teddy-bear"></i>Mother & Kids</a></li>
+                                <li><a href="{{ route('shop')}}"><i class="Sturkom-font-kite"></i>Outdoor fun</a></li>
                             </ul>
                         </div>
                     </div>
@@ -473,7 +473,7 @@
                     <nav>
                         <ul class="mobile-menu">
                             <li class="menu-item-has-children"><span class="menu-expand"></span><a href="/">Home</a></li>
-                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="shop.html">shop</a></li>
+                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="{{ route('shop')}}">shop</a></li>
                             <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Our Collections</a>
                                 <ul class="dropdown">
                                     <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Women's Fashion</a>
@@ -584,7 +584,7 @@
                                 <strong>Phone: </strong>+1 0000-000-000
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Email: </strong>contact@surfsidemedia.in
+                                <strong>Email: </strong>contact@Sturkom.in
                             </p>
                             <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                             <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
@@ -647,7 +647,7 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="text-lg-end text-start font-sm text-muted mb-0">
-                        &copy; <strong class="text-brand">SurfsideMedia</strong> All rights reserved
+                        &copy; <strong class="text-brand">Sturkom</strong> All rights reserved
                     </p>
                 </div>
             </div>

@@ -69,7 +69,7 @@
                                         <h2 class="title-detail">{{ $product->name }}</h2>
                                         <div class="product-detail-rating">
                                             <div class="pro-details-brand">
-                                                <span> Brands: <a href="shop.html">Bootstrap</a></span>
+                                                <span> Brands: <a href="{{ route('shop')}}">Bootstrap</a></span>
                                             </div>
                                             <div class="product-rate-cover text-end">
                                                 <div class="product-rate d-inline-block">
@@ -473,13 +473,13 @@
                         <div class="widget-category mb-30">
                             <h5 class="section-title style-1 mb-30 wow fadeIn animated">Category</h5>
                             <ul class="categories">
-                                <li><a href="shop.html">Shoes & Bags</a></li>
-                                <li><a href="shop.html">Blouses & Shirts</a></li>
-                                <li><a href="shop.html">Dresses</a></li>
-                                <li><a href="shop.html">Swimwear</a></li>
-                                <li><a href="shop.html">Beauty</a></li>
-                                <li><a href="shop.html">Jewelry & Watch</a></li>
-                                <li><a href="shop.html">Accessories</a></li>
+                                <li><a href="{{ route('shop')}}">Shoes & Bags</a></li>
+                                <li><a href="{{ route('shop')}}">Blouses & Shirts</a></li>
+                                <li><a href="{{ route('shop')}}">Dresses</a></li>
+                                <li><a href="{{ route('shop')}}">Swimwear</a></li>
+                                <li><a href="{{ route('shop')}}">Beauty</a></li>
+                                <li><a href="{{ route('shop')}}">Jewelry & Watch</a></li>
+                                <li><a href="{{ route('shop')}}">Accessories</a></li>
                             </ul>
                         </div>
                         <!-- Fillter By Price -->
@@ -524,7 +524,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
+                            <a href="{{ route('shop')}}" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
                         <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
