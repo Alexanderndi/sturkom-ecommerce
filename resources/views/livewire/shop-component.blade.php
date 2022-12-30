@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop.html">Music</a>
+                                        <a href="{{ route('shop')}}">Music</a>
                                     </div>
                                     <h2><a href="{{ route('product.details',['slug'=>$product->slug])}}">{{ $product->name }}</a></h2>
                                     <div class="rating-result" title="90%">
@@ -191,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
+                        <a href="{{ route('shop')}}" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                     </div>
                     <!-- Product sidebar Widget -->
                     <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
@@ -241,7 +241,7 @@
                         <div class="banner-text">
                             <span>Women Zone</span>
                             <h4>Save 17% on <br>Office Dress</h4>
-                            <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                            <a href="{{ route('shop')}}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

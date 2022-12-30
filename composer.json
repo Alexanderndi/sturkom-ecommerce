@@ -7,6 +7,7 @@
     "require": {
         "php": "^8.0.2",
         "andreaselia/laravel-api-to-postman": "^1.13",
+        "barryvdh/laravel-debugbar": "^3.7",
         "guzzlehttp/guzzle": "^7.2",
         "hardevine/shoppingcart": "^3.1",
         "laravel/framework": "^9.19",
@@ -15,6 +16,7 @@
         "livewire/livewire": "^2.10"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.12",
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.15",
         "laravel/pint": "^1.0",
